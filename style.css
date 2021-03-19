@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-color: hsl(185, 75%, 39%);
+    background-position: top 100% left 124%, right 120% bottom 158%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    background-color: white;
+}
+
+#bg_top {
+    height: 140px;
+    background-image: url(/images/bg-pattern-card.svg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#image {
+    width: 105px;
+    height: 105px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#image {
+    position: relative;
+    left: 108px;
+    bottom: 50px;
+}
+
+#name {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 95px;
+    bottom: 30px;
+}
+
+#title_tag {
+    padding-bottom: 15px;
+    font-weight: 700;
+    width: 150px;
+    color: hsl(229, 23%, 23%);
+}
+
+#title_tag span {
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+
+#name #location {
+    position: relative;
+    left: 40px;
+    width: 150px;
+    font-size: 0.778em;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+
+#container {
+    position: relative;
+    top: 170px;
+    width: 325px;
+    height: 375px;
+    border-radius: 15px;
+}
+
+#footer {
+    position: relative;
+    top: -5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#footer {
+    border-top: 1px solid;
+    border-top-color: rgb(223, 223, 223);
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: white;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+#footer p{
+    text-align: center;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+#footer span {
+    font-size: 0.667em;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    letter-spacing: 1.5px;
+}
+
+.attribution { 
+    position: relative;
+    top: 300px;
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 376px) {
+    #container {
+        width: 350px;
+    }
+
+    body {
+        background-position: top calc(100% + 6vw) left calc(124% - 60vw), right calc(120% - 55vw) bottom calc(158% - 2.2vw);
+    }
+
+    #image {
+        left: 125px;
+    }
+
+    #name {
+        left: 109px;
+    }
+}
